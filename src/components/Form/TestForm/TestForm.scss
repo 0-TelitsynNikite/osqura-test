@@ -1,0 +1,29 @@
+.text-container {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    p {
+        color: rgba(0, 0, 0, 0.35);
+    }
+}
+
+.partner-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.partner__link {
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
+    padding: 3.5vw;
+    overflow: hidden;
+    .partner__img {
+        position:absolute;
+        top: 5px;
+        left: 5px;
+        width: 80%;
+    }
+}

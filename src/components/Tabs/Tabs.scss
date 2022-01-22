@@ -1,0 +1,19 @@
+.tabs {
+    margin-top: 2rem;
+    flex: 3 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    .tabs_link {
+        border: 2px solid teal;
+        padding: 5px 20px;
+        width: 21vw;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+}
+

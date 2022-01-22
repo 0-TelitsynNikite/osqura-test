@@ -1,0 +1,9 @@
+.text-container {
+    .text__link {
+        background: linear-gradient(45deg, #4800FF 33%, #0D61BC 66%, #8AA9D6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        color: #0B2349;
+    }
+}

@@ -1,0 +1,25 @@
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .input-title {
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: -2px;
+        color: #000;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #afafaf;
+        border-radius: 5px;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        &:focus {
+            background-color: #fff;
+            border: 1px solid teal;
+        }
+    }
+}
