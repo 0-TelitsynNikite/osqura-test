@@ -2,17 +2,33 @@ import '../Form.scss'
 import './TestForm.scss'
 import Input from '../../UI/Input/Input';
 import Button from '../../UI/Button/Button';
+import Service from '../../../services/service';
+import EntryForm from '../EntryForm/EntryForm';
+import RegistrationForm from '../RegistrationForm/RegistrationForm';
+import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
+const TestForm = ({ title, getEmail }) => {
+    const [email, setEmail] = useState(null);
 
-const TestForm = ({title}) => {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        getEmail(email)
+    }
+
     return (
-        <form className="form">
-            <div className='form-header'><p>{title}</p> <i class="bi bi-x-lg"></i></div>
+        <form onSubmit={handleSubmit} className="form">
+            <div className='form-header'><p>{title}</p> <i className="bi bi-x-lg"></i></div>
             <div className='form-container'>
-                <Input type={'email'} placeholder={'Email'} />
+                <Input
+                    onChange={(event) => setEmail(event.target.value)}
+                    type={'email'}
+                    placeholder={'Email'} />
             </div>
             <div className='button-container'>
-                <Button className="button">Продолжить</Button>
+                <Button type="submit" className="button">Продолжить</Button>
+            </div>
+            <div style={{ marginTop: '-25px' }} className="button-container">
             </div>
             <div className='text-container'><p>Или</p></div>
             <div className='partner-container'>
