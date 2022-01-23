@@ -23,8 +23,7 @@ const RegistrationForm = ({title}) => {
         setSuccessValue({
             successId: successItem,
             successEmail: successEmail
-        })
-        console.log(successValue)
+        });
     };
 
     const handleSubmit = (e) => {

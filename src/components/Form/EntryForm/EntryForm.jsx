@@ -28,7 +28,7 @@ const EntryForm = ({title}) => {
     }
 
     if (error) {
-        return <h1>Error</h1>
+        return <h1>Password or Email is not valid</h1>
     } else if (users) {
         return <h1>Authorized</h1>
     }
